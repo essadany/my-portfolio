@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../components/Particle";
@@ -33,6 +34,8 @@ function Home() {
             <Col md={5} style={{ paddingBottom: 20 }}>
               <Image
                 src="public/Assets/home-main.svg"
+                width={300}
+                height={300}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
