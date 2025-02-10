@@ -254,6 +254,14 @@ button:focus {
   padding-top: 80px !important;
 }
 
+
+.App{
+  position: relative;
+  z-index: -2;
+  background-image: var(--image-gradient), url(../../public/Assets/galaxy.avif);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 .home-section {
   position: relative;
   z-index: -1;

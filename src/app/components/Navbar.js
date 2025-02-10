@@ -33,7 +33,7 @@ export default function NavBar() {
     <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <Image src="/assets/logo.png" width={100} height={100} alt="brand" className="rounded" />
+          <Image src="/Assets/logo.png" width={100} height={100} alt="brand" className="rounded" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

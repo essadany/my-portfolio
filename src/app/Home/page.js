@@ -9,7 +9,7 @@ import Image from "next/image";
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
+      <Container fluid className="home-section"  id="home">
         <Particle />
         <Container className="home-content">
           <Row>
@@ -33,9 +33,9 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <Image
-                src="public/Assets/home-main.svg"
-                width={300}
-                height={300}
+                src="/Assets/home-main.svg"
+                width={400}
+                height={400}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}

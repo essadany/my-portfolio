@@ -1,6 +1,5 @@
 // app/page.js
-import { redirect } from "next/navigation";
-
+import Home from "./Home/page";
 export default function HomePage() {
-  redirect("/Home");
+  return <Home />;
 }
