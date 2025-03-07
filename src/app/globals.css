@@ -256,15 +256,11 @@ button:focus {
 
 
 .App{
-  position: relative;
-  z-index: -2;
-  background-image: var(--image-gradient), url(../../public/Assets/galaxy.avif);
-  background-position: top center;
-  background-repeat: no-repeat;
+  z-index: -1;
+  background-color: #434244;
 }
 .home-section {
   position: relative;
-  z-index: -1;
   background-image: var(--image-gradient), url(../../public/Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;

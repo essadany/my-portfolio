@@ -1,0 +1,15 @@
+{
+    "home": {
+      "welcome": "Bienvenue sur notre site",
+      "description": "Ceci est un exemple de page traduite"
+    },
+    "about": {
+      "title": "À propos de nous",
+      "content": "Nous sommes une entreprise qui valorise l'excellence."
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "email": "Envoyez-nous un email"
+    }
+  }
+  
