@@ -1,15 +1,19 @@
-/* import React from "react";
+"use client";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../components/Particle";
-import leaf from "../../Assets/Projects/javafx.png";
-import emotion from "../../Assets/Projects/j2ee.png";
-import editor from "../../Assets/Projects/chatbot.png";
-import chatify from "../../Assets/Projects/bigdata.png";
-import suicide from "../../Assets/Projects/deep-learning.png";
-import bitsOfCode from "../../Assets/Projects/dev-full-stack.png";
+
 
 function Projects() {
+  const bontaz = "../../Assets/Projects/bontaz";
+  const numerus21 = "../../Assets/Projects/numerus21.png";
+  const elviga = "../../Assets/Projects/elviga.png";
+  const deepLearning = "../../Assets/Projects/deep-learning.png";
+  const j2ee = "../../Assets/Projects/j2ee.png";
+  const javafx = "../../Assets/Projects/javafx.png";
+  const bigData = "../../Assets/Projects/big-data.png";
+  const chatbot = "../../Assets/Projects/chatbot.png";
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -23,74 +27,91 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={bontaz}
               isBlog={false}
-              title="Chatify"
+              title="bontaz"
               description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/essadany/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              ghLink="https://github.com/essadany/bontaz"
+              demoLink="https://bontaz.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={numerus21}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/essadany/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Numerus21"
+              description="A website for a company that provides services in the field of digital marketing, web development, and graphic design. The website is built using React.js, Material-UI, and Firebase."
+              ghLink="https://github.com/essadany/Numerus21"
+              demoLink="https://numerus21.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={elviga}
+              isBlog={false}
+              title="Elviga"
+              description="A website for a company that provides services in the field of digital marketing, web development, and graphic design. The website is built using React.js, Material-UI, and Firebase."
+              ghLink="https://github.com/essadany/Elviga"
+              demoLink="https://elviga.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={deepLearning}
+              isBlog={false}
+              title="Deep Learning"
+              description="A website for a company that provides services in the field of digital marketing, web development, and graphic design. The website is built using React.js, Material-UI, and Firebase."
+              ghLink="https://github.com/essadany/DeepLearning"
+              demoLink="https://deeplearning.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={j2ee}
+              isBlog={false}
+              title="J2EE"
+              description="A website for a company that provides services in the field of digital marketing, web development, and graphic design. The website is built using React.js, Material-UI, and Firebase."
+              ghLink="https://github.com/essadany/J2EE"
+              demoLink="https://j2ee.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={javafx}
+              isBlog={false}
+              title="JavaFX"
+              description="A website for a company that provides services in the field of digital marketing, web development, and graphic design. The website is built using React.js, Material-UI, and Firebase."
+              ghLink="https://github.com/essadany/JavaFX"
+              demoLink="https://javafx.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bigData}
+              isBlog={false}
+              title="Big Data"
+              description="A website for a company that provides services in the field of digital marketing, web development, and graphic design. The website is built using React.js, Material-UI, and Firebase."
+              ghLink="https://github.com/essadany/BigData"
+              demoLink="https://bigdata.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatbot}
+              isBlog={false}
+              title="Chatbot"
+              description="A website for a company that provides services in the field of digital marketing, web development, and graphic design. The website is built using React.js, Material-UI, and Firebase."
+              ghLink="https://github.com/essadany/Chatbot"
+              demoLink="https://chatbot.com/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/essadany/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/essadany/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/essadany/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/essadany/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
   );
 }
 
-export default Projects; */
+export default Projects;
