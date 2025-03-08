@@ -9,7 +9,8 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
-        <iframe src={props.pdfPath} type="application/pdf" width="100%" height="400px" style={{ border: "none" }}/>
+        <iframe src={`${props.pdfPath}#view=FitH`}
+          width="100%" height="400px" style={{ border: "none" }} />
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
@@ -37,11 +38,11 @@ function ProjectCards(props) {
 
         {/* Add the technologies used in the project if techIcons prop is defined */}
         {props.techIcons && (
-              props.techIcons.map((Icon, index) => (
-                <Icon key={index} style={{ margin: "10px" }} />
-              ))
+          props.techIcons.map((Icon, index) => (
+            <Icon key={index} style={{ margin: "10px" }} />
+          ))
         )}
-        
+
       </Card.Body>
     </Card>
   );
