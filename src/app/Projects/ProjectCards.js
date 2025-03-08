@@ -7,8 +7,8 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
+        <embed src={props.pdfPath} type="application/pdf" width="100%" height="400px" />
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
@@ -17,6 +17,7 @@ function ProjectCards(props) {
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
         </Button>
+
         {"\n"}
         {"\n"}
 
@@ -33,6 +34,16 @@ function ProjectCards(props) {
             {"Demo"}
           </Button>
         )}
+
+        {/* Add the technologies used in the project if techIcons prop is defined */}
+        {props.techIcons && (
+          <Card.Text style={{ textAlign: "justify" }}>
+              {props.techIcons.map((Icon, index) => (
+                <Icon key={index} style={{ margin: "0 5px" }} />
+              ))}
+          </Card.Text>
+        )}
+        
       </Card.Body>
     </Card>
   );

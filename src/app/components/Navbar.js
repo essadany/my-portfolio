@@ -58,6 +58,12 @@ export default function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
+              <Nav.Link as={Link} href="/Experience" onClick={() => setExpand(false)}>
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Experience
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
               <Nav.Link as={Link} href="/Projects" onClick={() => setExpand(false)}>
                 <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
