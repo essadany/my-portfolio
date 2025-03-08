@@ -15,6 +15,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { MdWorkOutline  } from "react-icons/md";
 
 export default function NavBar() {
   const [expand, setExpand] = useState(false);
@@ -33,7 +34,7 @@ export default function NavBar() {
     <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <Image src="/Assets/logo.png" width={100} height={100} alt="brand" className="rounded" />
+          <Image src="/Assets/logo.png" width={70} height={70} alt="marque" className="rounded" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -47,37 +48,31 @@ export default function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} href="/" onClick={() => setExpand(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Accueil
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} href="/About" onClick={() => setExpand(false)}>
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> À propos
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} href="/Experience" onClick={() => setExpand(false)}>
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Experience
+                <MdWorkOutline  style={{ marginBottom: "2px" }} /> Expériences professionnelles
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} href="/Projects" onClick={() => setExpand(false)}>
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projets
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} href="/Resume" onClick={() => setExpand(false)}>
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link href="https://essadany.vercel.app/" target="_blank" rel="noreferrer">
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <CgFileDocument style={{ marginBottom: "2px" }} /> CV
               </Nav.Link>
             </Nav.Item>
 

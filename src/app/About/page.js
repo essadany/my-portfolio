@@ -13,9 +13,9 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row style={{ justifyContent: "center", padding: "0px" }}>
           <Col
-            md={7}
+            md={8}
             style={{
               justifyContent: "center",
               paddingTop: "30px",
@@ -23,26 +23,26 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              Découvrez qui <strong className="purple">JE SUIS</strong>
             </h1>
             <Aboutcard />
           </Col>
           <Col
-            md={5}
+            md={4}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <Image src="/Assets/about.png" width={1000} height={1000} alt="about" className="img-fluid" />
+            <Image src="/Assets/about.png" width={900} height={900} alt="à propos" className="img-fluid" />
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Compétences <strong className="purple">techniques</strong>
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">Outils</strong> que j'utilise
         </h1>
         <Toolstack />
 

@@ -8,8 +8,8 @@ function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       <Card.Body>
-        <embed src={props.pdfPath} type="application/pdf" width="100%" height="400px" />
         <Card.Title>{props.title}</Card.Title>
+        <embed src={props.pdfPath} type="application/pdf" width="100%" height="400px" />
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
@@ -37,11 +37,9 @@ function ProjectCards(props) {
 
         {/* Add the technologies used in the project if techIcons prop is defined */}
         {props.techIcons && (
-          <Card.Text style={{ textAlign: "justify" }}>
-              {props.techIcons.map((Icon, index) => (
-                <Icon key={index} style={{ margin: "0 5px" }} />
-              ))}
-          </Card.Text>
+              props.techIcons.map((Icon, index) => (
+                <Icon key={index} style={{ margin: "10px" }} />
+              ))
         )}
         
       </Card.Body>

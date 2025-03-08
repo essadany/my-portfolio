@@ -16,39 +16,39 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              PERMETTEZ-MOI DE ME <span className="purple"> PRÉSENTER </span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            Motivé et passionné par le développement web et l’intelligence artificielle, je suis curieux, adaptable, ponctuel et doté d’un excellent esprit d’équipe. 
+            Je suis à la recherche de mon premier emploi dès que possible. 
               <br />
-              <br />I am fluent in classics like
+              <br />Je maitrise les classiques comme
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> Python, Java, Php </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              Mes domaines d'intérêt sont la création de nouvelles &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">technologies web et produits </b> et
+                aussi dans des domaines liés à{" "}
                 <b className="purple">
-                  Blockchain.
+                  l'IA.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              Chaque fois que possible, j'applique également ma passion pour le développement de produits
+              avec <b className="purple">Php Laravel ou Java JEE</b> et
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  des bibliothèques et frameworks Javascript modernes
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; comme
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js et Next.js et Vue.js</b>
               </i>
             </p>
           </Col>
@@ -60,9 +60,9 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>RETROUVEZ-MOI SUR</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              N'hésitez pas à <span className="purple">me contacter </span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

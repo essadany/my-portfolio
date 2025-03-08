@@ -17,54 +17,23 @@ import {
   SiMysql ,
   SiNextdotjs,
   SiDocker,
+  SiOcaml,
+  SiBootstrap,
+  SiWordpress,
+  SiDataiku,
+  SiGitlab,
 } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPhp />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiLaravel />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaVuejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDocker />
-      </Col>
+      {[
+        DiPython, DiJava, DiPhp, DiLaravel, CgCPlusPlus, DiJavascript1, DiNodejs, DiReact, FaVuejs, SiNextdotjs, SiBootstrap, SiWordpress, SiOcaml, DiMongodb, SiMysql, DiGit, SiDocker, SiDataiku
+      ].map((Icon, index) => (
+        <Col key={index} xs={2} md={1} className="tech-icons">
+          <Icon />
+        </Col>
+      ))}
     </Row>
   );
 }

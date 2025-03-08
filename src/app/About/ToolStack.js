@@ -13,35 +13,25 @@ import { FaWindows } from "react-icons/fa";
 import { FcLinux } from "react-icons/fc";
 
 function Toolstack() {
+  const tools = [
+    { icon: <FaWindows />, key: "windows" },
+    { icon: <FcLinux />, key: "linux" },
+    { icon: <BiLogoVisualStudio />, key: "vscode" },
+    { icon: <SiPostman />, key: "postman" },
+    { icon: <SiIntellijidea />, key: "intellij" },
+    { icon: <SiEclipseide />, key: "eclipse" },
+    { icon: <SiPycharm />, key: "pycharm" },
+    { icon: <SiXampp />, key: "xampp" },
+    { icon: <SiVercel />, key: "vercel" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaWindows />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FcLinux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <BiLogoVisualStudio />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiIntellijidea  />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiEclipseide />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPycharm  />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-       <SiXampp  />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
+      {tools.map((tool) => (
+        <Col xs={2} md={1} className="tech-icons" key={tool.key}>
+          {tool.icon}
+        </Col>
+      ))}
     </Row>
   );
 }

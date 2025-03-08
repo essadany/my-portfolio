@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { ImPointRight, ImPointUp } from "react-icons/im";
+import { SiPointy } from "react-icons/si";
 
 function AboutCard() {
   return (
@@ -8,34 +9,36 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Yassine ES-SADANY </span>
-            from <span className="purple"> Zagora, Morocco.</span>
+            Bonjour à tous, je suis <span className="purple">Yassine ES-SADANY </span>
+            de <span className="purple"> Zagora, Maroc.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            Je suis actuellement jeune diplômé en France en génie informatique. Je suis à la recherche active de mon premier emploi en tant que développeur web full-stack ou backend.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Yassine</footer>
         </blockquote>
+        <h5>            Voici mon parcours scolaire :          </h5>
+        <table style={{ width: "100%", textAlign: "left",  }}>
+          <tbody>
+            <tr>
+              <td><ImPointRight /></td>
+              <td>Diplôme d'ingénieur en génie informatique et IA <br /> CY Tech (ex-EISTI)</td>
+              <td>2021 – 2024 | Cergy, France</td>
+            </tr>
+            <br></br>
+            <tr>
+              <td><ImPointRight /></td>
+              <td>Classes préparatoires aux grandes écoles<br />CPGE IBN TAHIR</td>
+              <td>2019 – 2021 | Errachidia, Maroc</td>
+            </tr>
+            <br></br>
+            <tr>
+              <td><ImPointRight /></td>
+              <td>Baccalauréat Filière Sciences Mathématiques <br /> Lycée technique Ibn Al Haitam</td>
+              <td>2018 – 2019 | Ouarzazate, Maroc</td>
+            </tr>
+          </tbody>
+        </table>
       </Card.Body>
     </Card>
   );
