@@ -9,7 +9,7 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
-        <iframe src={props.pdfPath} type="application/pdf" width="100%" height="400px" />
+        <iframe src={props.pdfPath} type="application/pdf" width="100%" height="400px" style={{ border: "none" }}/>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
