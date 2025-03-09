@@ -32,7 +32,7 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file="/Assets/YASSINE-ES-SADANY-CV-DEV.pdf" className="d-flex justify-content-center">
+          <Document file="/Assets/CV.pdf" className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} />
           </Document>
         </Row>
