@@ -11,12 +11,7 @@ function Projects() {
   const bontaz = "../../Assets/Projects/bontaz.pdf";
   const numerus21 = "../../Assets/Projects/numerus21.pdf";
   const elviga = "../../Assets/Projects/elviga.pdf";
-  const deepLearning = "../../Assets/Projects/faceDetection.pdf";
-  const j2ee = "../../Assets/Projects/javaEE.pdf";
-  const javafx = "../../Assets/Projects/javaFx.pdf";
-  const bigData = "../../Assets/Projects/big-data.mkv";
-  const chatbot = "../../Assets/Projects/chatbot.pdf";
-  const pfe = "../../Assets/Projects/pfe.pdf";
+
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -44,7 +39,7 @@ function Projects() {
               title="Bontaz | Stage de mobilité développeur full-stack"
               description="Automatisation de la procédure de traitement des réclamations (sous Excel) des clients de Bontaz pour des pièces automobiles défectueuses :
               - Conception et développement frontend et back-end de l’application web de gestion de réclamations "
-              ghLink="https://github.com/essadany/frontend"
+              ghLink="https://github.com/essadany/gestion-de-reclamations"
               techIcons={[DiVisualstudio,SiReact,SiLaravel,SiMysql,SiPhpmyadmin,SiXampp]}
             />
           </Col>

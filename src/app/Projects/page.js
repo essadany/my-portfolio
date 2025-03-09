@@ -10,9 +10,6 @@ import { BiLogoJava } from "react-icons/bi";
 
 
 function Projects() {
-  const bontaz = "../../Assets/Projects/bontaz.pdf";
-  const numerus21 = "../../Assets/Projects/numerus21.pdf";
-  const elviga = "../../Assets/Projects/elviga.pdf";
   const deepLearning = "../../Assets/Projects/faceDetection.pdf";
   const j2ee = "../../Assets/Projects/javaEE.pdf";
   const javafx = "../../Assets/Projects/javaFx.pdf";
