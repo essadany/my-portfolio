@@ -22,7 +22,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href="/Assets/YASSINE-ES-SADANY-CV-DEV.pdf"
+            href="/Assets/CV.pdf"
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -40,7 +40,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href="/Assets/YASSINE-ES-SADANY-CV-DEV.pdf"
+            href="/Assets/CV.pdf"
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
