@@ -23,13 +23,13 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <Col md={4} className="project-card">
             <ProjectCard
-              pdfPath={uness}
+              //pdfPath={uness}
               isBlog={false}
               title="GIP UNESS.fr | Développeur full-stack"
               description="Mise à jour de l'application UNESS Compétences pour l'évaluation des stages des étudiants en santé :
-              • Développement frontend et participation au backend de l'application web
-              • Maintenance évolutive, respect des bonnes pratiques de développement et rédaction de la documentation
-              • Participation à la définition de l'architecture et veille technologique
+              - Développement frontend et participation au backend de l'application web
+              - Maintenance évolutive, respect des bonnes pratiques de développement et rédaction de la documentation
+              - Participation à la définition de l'architecture et veille technologique
               Résultat : mise en production de la nouvelle interface UNESS Compétences pour l'évaluation des stages"
               ghLink=""
               techIcons={[DiVisualstudio,SiAngular,SiDjango,SiPostgresql,SiGitlab,SiDocker]}
