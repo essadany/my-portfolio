@@ -22,13 +22,15 @@ import {
   SiWordpress,
   SiDataiku,
   SiGitlab,
+  SiAngular,
+  SiDjango
 } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {[
-        DiPython, DiJava, DiPhp, DiLaravel, CgCPlusPlus, DiJavascript1, DiNodejs, DiReact, FaVuejs, SiNextdotjs, SiBootstrap, SiWordpress, SiOcaml, DiMongodb, SiMysql, DiGit, SiDocker, SiDataiku
+        DiPython, SiDjango, SiAngular, DiJava, DiPhp, DiLaravel, CgCPlusPlus, DiJavascript1, DiNodejs, DiReact, FaVuejs, SiNextdotjs, SiBootstrap, SiWordpress, SiOcaml, DiMongodb, SiMysql, DiGit, SiDocker, SiDataiku
       ].map((Icon, index) => (
         <Col key={index} xs={2} md={1} className="tech-icons">
           <Icon />
