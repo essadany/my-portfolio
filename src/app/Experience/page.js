@@ -4,13 +4,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../Projects/ProjectCards";
 import Particle from "../components/Particle";
 import { DiVisualstudio } from "react-icons/di";
-import { SiGooglecolab, SiLangchain, SiLaravel, SiMysql, SiOllama, SiPhpmyadmin, SiPython, SiReact, SiReactbootstrap, SiVuedotjs, SiXampp } from "react-icons/si";
+import { SiAngular, SiDjango, SiDocker, SiGitlab, SiGooglecolab, SiLangchain, SiLaravel, SiMysql, SiOllama, SiPhpmyadmin, SiPostgresql, SiPython, SiReact, SiReactbootstrap, SiVuedotjs, SiXampp } from "react-icons/si";
 
 
 function Projects() {
   const bontaz = "../../Assets/Projects/bontaz.pdf";
   const numerus21 = "../../Assets/Projects/numerus21.pdf";
   const elviga = "../../Assets/Projects/elviga.pdf";
+  const uness = "../../Assets/Projects/uness.pdf";
 
   return (
     <Container fluid className="project-section">
@@ -20,6 +21,20 @@ function Projects() {
           Mes expériences <strong className="purple">professionnelles </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              pdfPath={uness}
+              isBlog={false}
+              title="GIP UNESS.fr | Développeur full-stack"
+              description="Mise à jour de l'application UNESS Compétences pour l'évaluation des stages des étudiants en santé :
+              • Développement frontend et participation au backend de l'application web
+              • Maintenance évolutive, respect des bonnes pratiques de développement et rédaction de la documentation
+              • Participation à la définition de l'architecture et veille technologique
+              Résultat : mise en production de la nouvelle interface UNESS Compétences pour l'évaluation des stages"
+              ghLink=""
+              techIcons={[DiVisualstudio,SiAngular,SiDjango,SiPostgresql,SiGitlab,SiDocker]}
+            />
+          </Col>
         <Col md={4} className="project-card">
             <ProjectCard
               pdfPath={elviga}
